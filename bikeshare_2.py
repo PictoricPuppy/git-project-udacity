@@ -9,6 +9,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#CITY_DATA constant contains the dictionary where cities are keys and the value is the csv file with the existing data.
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
