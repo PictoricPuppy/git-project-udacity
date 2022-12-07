@@ -3,6 +3,8 @@ Course: Programming for Data Science with Python
 Student: Eva Santamaría López
 Date: 30 Nov 2022
 Version 01
+Date: 7 Dec 2022
+Version 02
 """
 
 import time
