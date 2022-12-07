@@ -197,6 +197,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+        #Here the script will ask to the user to restart or to stop the data treatment.
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
