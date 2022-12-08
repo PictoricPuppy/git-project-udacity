@@ -11,6 +11,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#CITY_DATA constant contains the dictionary where cities are keys and the value is the csv file with the existing data.
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -186,6 +187,8 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+
+#Main function. Contains the call to the data filtering and data transformation functions.
 def main():
 
     while True:
@@ -197,6 +200,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+        #Here the script will ask to the user to restart or to stop the data treatment.
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
